@@ -11,4 +11,9 @@ public class FirstController {
     public String getData(){
         return "From my MyApp Application";
     }
+
+    @GetMapping("/myapp/getAll2")
+    public String getData2(){
+        return "From my MyApp Application 2";
+    }
 }
