@@ -46,10 +46,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<image>
-						<name>prashant/myapp-${artifactId}:${version}</name>
-					</image>
-					<pullPolicy>IF_NOT_FOUND</pullPolicy>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
@@ -59,6 +55,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>myapp-docker</finalName>
 	</build>
 
 </project>
